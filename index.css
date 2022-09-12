@@ -1,0 +1,65 @@
+html, body {
+    background-color: #7AC3FD;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.current-time-display {
+    background: #1b263b;
+    color:azure;
+    padding: 10px;
+    width: 200px;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.alarm-time-display {
+    color: azure;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+    font-size: 2em;
+    margin: 0px;
+}
+
+.hours-label {
+    color: azure;
+}
+
+.min-label {
+    color: azure;
+}
+
+input, button {
+    font-family: inherit; 
+    font-size: 2em;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 90%;
+    margin: 1em;
+    background: #ffe45e;
+    width: 450px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #f8ce00;
+    cursor: pointer;
+    
+}
+
+button:active {
+    transform: scale(0.96);
+}

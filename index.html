@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="index.css" />
+    <title>JavaScript Alarm Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="current-time-display" class="current-time-display">--:--:--</p>
+      <p id="alarm-time-display" class="alarm-time-display">--:--:--</p>
+      <p id="alarm-message-display"></p>
+
+      <form class="alarm-inputs">
+        <label for="hours-input" class="hours-label">Hours</label>
+        <input
+          id="hours-input"
+          type="number"
+          name="hour"
+          placeholder="00"
+          min="0"
+          max="23"
+          required
+        />
+        <label for="minutes-input" class="min-label">Minutes</label>
+        <input
+          id="minutes-input"
+          type="number"
+          name="min"
+          placeholder="00"
+          min="0"
+          max="59"
+          required
+        />
+
+        <button type="submit" id="set-alarm-button">Set alarm</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
